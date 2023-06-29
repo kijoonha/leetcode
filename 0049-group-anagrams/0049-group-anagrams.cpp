@@ -4,13 +4,13 @@ public:
         
 
 
-    map<string, vector<string>> myMap;  //myMap 원소는 {"eat","ate"}
-    vector<vector<string>> results;   // {{"eat","ate"},{"no","on"}}
+    map<string, vector<string>> myMap;  
+    vector<vector<string>> results;  
     
     for (int i=0; i<strs.size(); i++){
         string sorted = strs[i];
         sort(sorted.begin(),sorted.end());
-        //myMap.insert(pair<string,string>(sorted,strs[i]));
+
         if (myMap.count(sorted) ==0){
             myMap.insert(pair<string, vector<string>> (sorted, {strs[i]}));
         } 
