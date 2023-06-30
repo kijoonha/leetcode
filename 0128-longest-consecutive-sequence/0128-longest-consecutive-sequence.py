@@ -17,7 +17,6 @@ class Solution:
                 continue
             else:
                 mm = 0
-            print(mm)
             if mm > mmm:
                 mmm = mm
         return mmm+1
