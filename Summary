@@ -1,0 +1,9 @@
+49. Group Anagrams
+ - map<string, vector<string>으로 만든 후 vector에 추가할 수 있음
+ - 비슷한 기능을 하는 multimap있음(multimap은 key가 중복될 수 있음)
+ - 비슷한 개념으로 set, multiset, map, multimap이 있고, 모두 unorder_를 붙여 정렬하지 않은 container를 만들 수 있음
+
+128. longest consecutive sequence
+ - 시간복잡도 o(n)하려고 set 을 사용하였지만 더 오래걸린건 아닌지?
+
+
