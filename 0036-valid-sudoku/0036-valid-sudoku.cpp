@@ -10,8 +10,7 @@ class Solution {
                 if (board[i][j] =='.')
                     continue;
                 ret1 = s1.insert(board[i][j]);
-                if (!ret1.second){
-                    
+                if (!ret1.second){                     
                     return false;
                 }
             }
@@ -46,14 +45,12 @@ class Solution {
                 //.아닐경우만
                 if (board[ii%9][jj] !='.'){
                     ret3 = s3.insert(board[ii%9][jj]);
-                }
-                
+                }                    
                 if (!ret3.second){
                     cout<<3;
                     return false;
-                }
-                
-                if (jj%3==2){ //jj가 2일때,5일때, 8일때 i를 1씩 올리기
+                }                    
+                if (jj%3==2){                      //jj가 2일때,5일때, 8일때 i를 1씩 올리기
                     if (ii%3==2 && jj%3==2){       //9개 다 돌면 reset해야함
                         cout<<"clear";
                         s3.clear();}
