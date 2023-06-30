@@ -13,7 +13,6 @@ public:
         
         //[]비어있을 경우
         if (nums.empty()){
-            cout<<nums.size()<<"<비어있을때";
             return (int)0;}
         
         for (it=sortedNums.begin(); it!=sortedNums.end(); it++){
@@ -21,7 +20,6 @@ public:
             if (it==sortedNums.begin()){
                 preval = *it;
                 mcnt = cnt;
-                cout<<"  cnt1: "<<cnt;
             }
             //2번째 값부터 앞의 값과 비교
             else{
@@ -30,8 +28,6 @@ public:
                     cnt++;
                     if (mcnt<cnt)
                         {mcnt = cnt;}
-                    cout<<"cnt2: "<<cnt;
-                    cout<<"  val: "<<*it;
                 }
                 else{
                     cnt = 0;
