@@ -24,7 +24,6 @@ public:
             //2번째 값부터 앞의 값과 비교
             else{
                 if (*it==preval+1){
-
                     cnt++;
                     if (mcnt<cnt)
                         {mcnt = cnt;}
