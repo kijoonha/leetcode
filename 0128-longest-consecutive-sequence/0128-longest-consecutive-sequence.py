@@ -14,7 +14,7 @@ class Solution:
             if (diff[ii]==1):
                 mm = mm+1
             elif (diff[ii]==0):
-                mm = mm
+                continue
             else:
                 mm = 0
             print(mm)
